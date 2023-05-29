@@ -1,0 +1,24 @@
+# Ultralytics YOLO 🚀, GPL-3.0 license
+# COCO8-pose dataset (first 8 images from COCO train2017) by Ultralytics
+# Example usage: yolo train data=coco8-pose.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco8-pose  ← downloads here (1 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../bbox  # dataset root dir
+train: train/image  # train images (relative to 'path') 4 images
+val: validate/image  # val images (relative to 'path') 4 images
+#test:  test_test\\image # test images (optional)
+
+# Classes
+names:
+  0: A1_dog
+  1: A2_dog
+  2: A3_dog
+  3: A4_dog
+  4: A5_dog
+  5: A6_dog
+  6: A2_cat
