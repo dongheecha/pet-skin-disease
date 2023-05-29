@@ -44,7 +44,7 @@ Updated: May 29, 2023 2:29 PM
 
 **(전처리 수행 전→ JSON File (left x, left h, image width, image height))**
 
-![Untitled](Yolov8%20%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A2%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled%202.png)
+![Untitled](https://github.com/dongheecha/pet-skin-disease/blob/main/Yolov8%20%EC%A7%84%ED%96%89%EB%B3%B4%EA%B3%A0%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled 2.png)
 
 **(전처리 수행 후→ TXT File (center x, center y, w, h))**
 
