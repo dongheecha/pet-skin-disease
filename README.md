@@ -3,16 +3,6 @@
 Created: April 15, 2023 7:10 PM
 Updated: May 29, 2023 2:29 PM
 
-**관련 연구 논문**
-
-- 300장 강아지 질환 이미지 사용
-- Training: 80% , Validation : 10%, Test: 10%
-- Conv2D model
-- Accuracy: 0.9863 , Loss: 0.0137
-
-> [https://www.researchgate.net/profile/Lokesha-Weerasinghe/publication/365929081_Intelligent_System_for_Skin_Disease_Detection_of_Dogs_with_Ontology_Based_Clinical_Information_Extraction/links/63aacdc403aad5368e45749d/Intelligent-System-for-Skin-Disease-Detection-of-Dogs-with-Ontology-Based-Clinical-Information-Extraction.pdf](https://www.researchgate.net/profile/Lokesha-Weerasinghe/publication/365929081_Intelligent_System_for_Skin_Disease_Detection_of_Dogs_with_Ontology_Based_Clinical_Information_Extraction/links/63aacdc403aad5368e45749d/Intelligent-System-for-Skin-Disease-Detection-of-Dogs-with-Ontology-Based-Clinical-Information-Extraction.pdf)
-> 
-
 ### Yolov8 POSE 추가학습 사전내용
 
 - Yolo는 Single Stage Method 로서 이미지 내에 존재하는 객체와 위치를 한번만 보고 예측함.
@@ -28,37 +18,10 @@ Updated: May 29, 2023 2:29 PM
 
 ### Dataset
 
-- AIHUB 반려동물 피부질환 데이터
-    - 반려동물 10,000마리 이상 (반려견 7종, 반려묘 4종 )
-    - 질환 이미지 (Train : 55,874 / Validation :  6,985)
-
 ### Data Preprocessing
 
-- Coco Data Format (x, y, width, height) 를 Yolo Data Format 에 맞게 Normalization(min, max center point calculated) 수행
-
-![Untitled](Yolov8%20%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A2%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled.png)
-
-![( 예시 코드)](Yolov8%20%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A2%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled%201.png)
-
-( 예시 코드)
-
-**(전처리 수행 전→ JSON File (left x, left h, image width, image height))**
-
-![Untitled](https://github.com/dongheecha/pet-skin-disease/blob/main/Yolov8%20%EC%A7%84%ED%96%89%EB%B3%B4%EA%B3%A0%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled 2.png)
-
-**(전처리 수행 후→ TXT File (center x, center y, w, h))**
-
-![Untitled](Yolov8%20%E1%84%8C%E1%85%B5%E1%86%AB%E1%84%92%E1%85%A2%E1%86%BC%E1%84%87%E1%85%A9%E1%84%80%E1%85%A9%20(05%2029)%209f27e751ae0947bf90d43b06c7660ad2/Untitled%203.png)
 
 ### Training (현재 진행중)
-
-- **Train dataset** : 55,874 (image, label)
-- **Valid dataset**: 6,985 (image, label)
-- **Class**: 6 (강아지 질환 5, 고양이 질환 1)
-- **Batch size** : 10 **(10이 넘어가면 GPU 메모리 문제 발생)**
-- **Epochs** : 20,
-- **Learning late** : 0.01 **(Yolov8 기본값**)
-- **image size** : 1920, 1080  **(AIHUB 모든 이미지 데이터가 1920, 1080으로 같음. Crop 사용 안함.)**    
 
 ### 학습 결과
 
