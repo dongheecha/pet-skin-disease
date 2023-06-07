@@ -17,11 +17,19 @@ Updated: May 29, 2023 2:29 PM
     - [Train Custom Data 참고](https://docs.ultralytics.com/yolov5/train_custom_data/)
 
 ### Dataset
+BBOX
+Label : 1~6
 
 ### Data Preprocessing
+Min Max Scailing
 
-
-### Training (현재 진행중)
+### Training 
+Device GPU
+Image 1920 x 1080 ->  600 X 337.5
+Epochs 300
+learning late 1E-3
+optimizer Adam
 
 ### 학습 결과
 
+![ex_screenshot](./run/yolov8n_custom20/results.png)
