@@ -33,3 +33,14 @@ optimizer Adam
 ### 학습 결과
 
 ![ex_screenshot](./run/yolov8n_custom20/results.png)
+
+![ex_screenshot](./run/yolov8n_custom20/F1_curve.png)
+![ex_screenshot](./run/yolov8n_custom20/PR_curve.png)
+![ex_screenshot](./run/yolov8n_custom20/P_curve.png)
+![ex_screenshot](./run/yolov8n_custom20/_curve.png)
+
+### Predict
+아래 경로 참고
+- /run/yolov8n_custom20/val_batch0_pred.jpg
+- /run/yolov8n_custom20/val_batch1_pred.jpg
+- /run/yolov8n_custom20/val_batch2_pred.jpg
