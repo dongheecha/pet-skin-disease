@@ -1,4 +1,4 @@
-# Yolov8 진행보고 (05/29)
+# Yolov8 진행보고 (06/07)
 
 Created: April 15, 2023 7:10 PM
 Updated: May 29, 2023 2:29 PM
