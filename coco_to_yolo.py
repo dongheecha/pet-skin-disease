@@ -1,10 +1,69 @@
 # This is a sample Python script.
 import json
 import os
+import shutil
+from glob import glob
+
 import cv2
 
 IMG_WIDTH = 1920
 IMG_HEIGHT = 1080
+
+
+def test_data_from_train(train_dir, test_dir):
+    D_A1 = 0
+    D_A2 = 0
+    D_A3 = 0
+    D_A4 = 0
+    D_A5 = 0
+    D_A6 = 0
+    C_A1 = 0
+    C_A2 = 0
+
+    for file in glob(os.path.join(train_dir, '*.txt')):
+
+        if 'D_A1' in file:
+            print(file)
+            if D_A1 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A1 += 1
+        elif 'D_A2' in file:
+            print(file)
+            if D_A2 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A2 += 1
+        elif 'D_A3' in file:
+            print(file)
+            if D_A3 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A3 += 1
+        elif 'D_A4' in file:
+            print(file)
+            if D_A4 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A4 += 1
+        elif 'D_A5' in file:
+            print(file)
+            if D_A5 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A5 += 1
+
+        elif 'D_A6' in file:
+            print(file)
+            if D_A6 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                D_A6 += 1
+        elif 'C_A1' in file:
+            print(file)
+            if C_A1 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                C_A1 += 1
+
+        elif 'C_A2' in file:
+            print(file)
+            if C_A2 < 2500:
+                shutil.copy(f'{file}', f'{test_dir}')
+                C_A2 += 1
 
 
 def convert(x, y, width, height):
@@ -46,12 +105,12 @@ def extract_bbox_label_from_json(label, dir_path, output_path):
                     w = list(bbox.values())[2]
                     h = list(bbox.values())[3]
 
-                    x_center, y_center, w, h= convert(x, y, w, h)
+                    x_center, y_center, w, h = convert(x, y, w, h)
 
                     fw.write(f"{label} {x_center} {y_center} {w} {h}\n")
 
                     f.close()
-                    continue    # Detection 1개만
+                    continue  # Detection 1개만
     fw.close()
 
 
@@ -96,4 +155,5 @@ if __name__ == '__main__':
         dir_path="C:\\Users\\도니\\Downloads\\152.반려동물 피부질환 데이터\\01.데이터\\2.Validation\\2_라벨링데이터\\VL01\\반려묘\\피부\\일반카메라\\유증상\\A2_비듬_각질_상피성잔고리",
         output_path="C:\\dog-skin-disease\\data\\bbox\\validate\\image",
         label=6)
-
+    # test_data_from_train(train_dir="C:\\dog-skin-disease\\data\\bbox\\train\\image",
+    #                      test_dir="C:\\dog-skin-disease\\data\\bbox\\test\\image")
