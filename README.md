@@ -37,7 +37,7 @@ optimizer Adam
 ![ex_screenshot](./run/yolov8n_custom20/F1_curve.png)
 ![ex_screenshot](./run/yolov8n_custom20/PR_curve.png)
 ![ex_screenshot](./run/yolov8n_custom20/P_curve.png)
-![ex_screenshot](./run/yolov8n_custom20/_curve.png)
+![ex_screenshot](./run/yolov8n_custom20/R_curve.png)
 
 ### Predict
 아래 경로 참고
