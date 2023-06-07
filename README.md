@@ -24,11 +24,11 @@ Label : 1~6
 Min Max Scailing
 
 ### Training 
-Device GPU
-Image 1920 x 1080 ->  600 X 337.5
-Epochs 300
-learning late 1E-3
-optimizer Adam
+- Device GPU
+- Image 1920 x 1080 ->  600 X 337.5
+- Epochs 300
+- learning late 1E-3
+- optimizer Adam
 
 ### 학습 결과
 
