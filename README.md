@@ -20,9 +20,9 @@ Updated: May 29, 2023 2:29 PM
 BBOX
 Label : 1~6
 
-train: 반려견, 반려묘 55,874
-validation: 반려견, 반려묘 6,985
-test: 반려견, 반려묘 랜덤 17,500
+- train: 반려견, 반려묘 55,874
+- validation: 반려견, 반려묘 6,985
+- test: 반려견, 반려묘 랜덤 17,500
 
 
 ### Data Preprocessing
