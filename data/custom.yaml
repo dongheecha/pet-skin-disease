@@ -8,10 +8,10 @@
 
 
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
-path: ../bbox  # dataset root dir
-train: train/image  # train images (relative to 'path') 4 images
-val: validate/image  # val images (relative to 'path') 4 images
-#test:  test_test\\image # test images (optional)
+path: ../datasets/animal  # dataset root dir
+train: train/images  # train images (relative to 'path') 4 images
+val: validation/images  # val images (relative to 'path') 4 images
+test:  test/images # test images (optional)
 
 # Classes
 names:
@@ -21,4 +21,3 @@ names:
   3: A4_dog
   4: A5_dog
   5: A6_dog
-  6: A2_cat
