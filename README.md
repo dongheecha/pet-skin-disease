@@ -1,4 +1,4 @@
-# Yolov8 진행보고 (05/29)
+# Yolov8 진행보고 (06/07)
 
 Created: April 15, 2023 7:10 PM
 Updated: May 29, 2023 2:29 PM
@@ -18,10 +18,41 @@ Updated: May 29, 2023 2:29 PM
 
 ### Dataset
 
+#### AIHUB
+
+- train: 반려견, 반려묘 55,874 (* 반려견 53,170)
+- validation: 반려견, 반려묘 6,985
+- test: 반려견, 반려묘 랜덤 17,500
+
+
+#### USE DATA
+
+- train: 반려견 53,170
+- validation: 반려견 6,647
+- test: 반려견 15,000
+
 ### Data Preprocessing
+Min Max Scailing
 
-
-### Training (현재 진행중)
+### Training 
+- Device GPU
+- Image 1920 x 1080 ->  600 X 337.5
+- Epochs 100
+- learning late 1E-3
+- optimizer Adam
+- loss VFL Loss, DFL Loss + CIOU Loss 함께 사용
 
 ### 학습 결과
 
+![ex_screenshot](./run/yolov8n_custom27/results.png)
+
+![ex_screenshot](./run/yolov8n_custom28/F1_curve.png)
+![ex_screenshot](./run/yolov8n_custom28/PR_curve.png)
+![ex_screenshot](./run/yolov8n_custom28/P_curve.png)
+![ex_screenshot](./run/yolov8n_custom28/R_curve.png)
+
+### Predict
+아래 경로 참고
+- /run/yolov8n_custom20/val_batch0_pred.jpg
+- /run/yolov8n_custom20/val_batch1_pred.jpg
+- /run/yolov8n_custom20/val_batch2_pred.jpg
